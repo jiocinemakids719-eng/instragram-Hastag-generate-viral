@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hashtag Generator</title>
+<style>
+body {font-family: Arial; text-align: center; margin-top: 50px;}
+input {padding: 10px; width: 200px;}
+button {padding: 10px;}
+</style>
+</head>
+<body>
+
+<h1>🔥 Hashtag Generator</h1>
+
+<input type="text" id="topic" placeholder="Enter topic">
+<br><br>
+<button onclick="generate()">Generate</button>
+
+<p id="output"></p>
+
+<script>
+function generate() {
+  let topic = document.getElementById("topic").value;
+  document.getElementById("output").innerText =
+    "#" + topic + " #viral #trending #reels #insta #explore";
+}
+</script>
+
+</body>
+</html>
